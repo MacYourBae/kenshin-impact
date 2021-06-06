@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page - Official Website Kenshin Impact</title>
+    <link rel="stylesheet" href="../styles/style-register.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../images/kenshin-impact-logo-white.png" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar Section -->
+    <div class="temp"></div>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-dropdown">
+                <!-- Menu SVG items -->
+                <svg width="53" height="31" viewBox="0 0 53 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="24" width="53" height="7" fill="white"/>
+                    <rect y="12" width="53" height="7" fill="white"/>
+                    <rect width="53" height="7" fill="white"/>
+                </svg>
+                <div class="dropdown-content">
+                    <a href="#">Kenshin’s Impact Home Page</a>
+                    <a href="#">Character Informations</a>
+                    <a href="#">Game Informations</a>
+                    <a href="#">Kenshin’s Impact Gallery</a>
+                </div>
+            </div>
+            <a href="../index.html">
+                <img src="../images/kenshin-impact-logo-white.png" alt="" width="144px" height="75px">
+            </a>
+            <a href="#" class="login-box login-text">
+                <form action="">LOGIN</form>
+            </a>
+        </div>
+    </nav>
+    <!-- Register Section -->
+    <section class="register-section">
+        <div class="form-box">
+            <h1 class="">Sign Up</h1>
+            <hr>
+            <form action="">
+                <div class="form-1">
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="input_email" placeholder="Please input your email here..">
+                    <label for="username">Username :</label>
+                    <input type="text" name="username" id="input_username" placeholder="Please input your username here..">
+                    <label for="password">Password :</label>
+                    <input type="password" name="password" id="input_password" placeholder="Please input your password here..">
+                    <label for="confirm_password">Confirm Password :</label>
+                    <input type="password" name="confirm_password" id="input_confirm_password" placeholder="Please confirm your password here..">
+                </div>
+                <div class="form-2">
+                    <label for="age">Age :</label>
+                    <input type="number" name="age" id="input_age" placeholder="12+">
+                    <label for="birthday">Birthday :</label>
+                    <input type="date" name="birthday" id="input_date">
+                    <label for="region">Region :</label>
+                    <select name="region" id="input_region" >
+                        <option value="0">Please choose your region</option>
+                        <option value="1">Africa</option>
+                        <option value="2">America</option>
+                        <option value="3">Asia</option>
+                        <option value="4">Australia</option>
+                        <option value="5">Europe</option>
+                        <option value="6">South America</option>
+                    </select>
+                    <label for="gender">Gender :</label>
+                    <div class="gender-box">
+                        <input checked type="radio" name="gender" id="input_male" value="male">
+                        <label for="input_male">Male</label>
+                        <input type="radio" name="gender" id="input_female" value="female">
+                        <label for="input_female">Female</label>
+                    </div>
+                    <div class="agree-box">
+                        <input type="checkbox" name="agree_term_and_condition" id="input_agree_term_and_condition">
+                        <label for="agree_term_and_condition">I Agree With <span class="term-and-condition-text"><a href="">Term and Conditions</a></span></label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Sections -->
+    <footer class="footer-section">
+        <div class="footer-left">
+            <a href="#"><img src="../images/mihoyoman-without-background.png" alt="" height="58px" width="155px"></a>
+            <div class="vertical-line"></div>
+            <a href="#"><img src="../images/kenshin-impact-logo-white.png" alt="" height="93px" width="155pxpx"></a>
+        </div>
+        <div class="footer-right">
+            <div class="social-media-box">
+                <a href="https://www.facebook.com/GenshinImpact.id/" class="social-media-icons"><img src="../images/footer-facebook.svg" alt="" width="57px" height="57px"></a>
+                <a href="https://twitter.com/GenshinImpact" class="social-media-icons"><img src="../images/footer-twitter.svg" alt="" width="57px" height="57px"></a>
+                <a href="https://www.instagram.com/genshinimpact/" class="social-media-icons"><img src="../images/footer-instagram.svg" alt="" width="57px" height="57px"></a>
+                <a href="https://discord.gg/genshinimpact" class="social-media-icons"><img src="../images/footer-discord.svg" alt="" width="57px" height="57px"></a>
+                <a href="https://www.reddit.com/r/Genshin_Impact/" class="social-media-icons"><img src="../images/footer-reddit.svg" alt="" width="57px" height="57px"></a>
+                <a href="https://www.youtube.com/c/GenshinImpact" class="social-media-icons"><img src="../images/footer-youtube.svg" alt="" width="57px" height="57px"></a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content-box">
+                    <p>|</p>
+                    <a href="#">Privacy Policy</a>
+                    <p>|</p>
+                    <a href="#">Term of Service</a>
+                    <p>|</p>
+                    <a href="#">About Us</a>
+                    <p>|</p>
+                    <a href="#">Contact Us</a>
+                    <p>|</p>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright &copy 2020 miHoYoman All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <script src="../script/script-register.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

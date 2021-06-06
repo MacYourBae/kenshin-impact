@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Section */
+.temp{
+    height: 95px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 4rem;
+}
+
+/* Dropdown Section */
+.nav-dropdown:hover svg rect{
+    fill: #D47616;
+}
+
+.dropdown-content{
+    display: none;
+    position: fixed;
+    background-color: black;
+    min-width: 25rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    color: white;
+    flex-direction: column;
+    left: 0;
+    padding-top: 1.9rem;
+}
+
+.nav-dropdown:hover .dropdown-content{
+    display: flex;
+}
+
+.dropdown-content a:hover{
+    color: #D47616;
+}
+
+.dropdown-content a{
+    color: white;
+    width: 100%;
+    margin: auto;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.login-text{
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    height: auto;
+}
+
+.login-box{
+    border: 2px solid white;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0px 6px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
+
+/* Registration Section */
+.register-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url('../images/register-background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 4rem;
+}
+
+.form-box{
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    height: auto;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem;
+}
+
+.form-box h1{
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+
+.form-box hr{
+    width: 50%;
+    height: 0.35rem;
+    background: black;
+    border: 1px solid #D47616;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-self: center;
+}
+
+label{
+    margin: 0.5rem 0;
+}
+
+.form-box input, select{
+    margin-bottom: 0.5rem;
+}
+
+.form-box button{
+    height: 3rem;
+    background: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+    width: 50%;
+    align-self: center;
+    margin: 1rem auto 1rem auto;
+}
+
+/* Form 1 Section */
+.form-box form .form-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.term-and-condition-text a{
+    color: red;
+    text-decoration: underline;
+}
+
+.form-1 input{
+    height: 3rem;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.5rem;
+    color: #5e5c5c;
+}
+
+.form-1 .agree-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form-1 #input_agree_term_and_condition{
+    display: flex;
+    align-items: center;
+}
+
+/* Form 2 Section */
+.form-box form .form-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form-2 #input_age{
+    height: 3rem;
+    width: 30%;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.5rem;
+    color: #5e5c5c;
+}
+
+.form-2 #input_date, .form-2 #input_region{
+    height: 3rem;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.5rem;
+    color: #5e5c5c;
+}
+
+.form-2 .gender-box{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.form-2 .gender-box input{
+    margin: 0 0.2rem 0 0;
+}
+
+/* Footer Section */
+.footer-section{
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 4rem;
+}
+
+.vertical-line{
+    width: 2px;
+    height: 50%;
+    background-color: white;
+    margin: 0 0.5rem;
+}
+
+.footer-left{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-media-icons{
+    margin: 0rem 0.5rem;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+}
+
+.footer-content-box{
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+.footer-content-box a{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    text-decoration: none;
+    color: #c4c4c4;
+}
+
+.footer-content-box a:hover{
+    color: #D47616;
+}
+
+.footer-content-box p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    color: #c4c4c4;
+    margin: 0rem 0.2rem;
+}
+
+.copyright{
+    color: white;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    margin: 0rem 0.2rem;
+}

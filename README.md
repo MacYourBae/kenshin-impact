@@ -12,4 +12,3 @@ Logo Requirement:
 
 Blueprint Requirement:
 - Using Photoshop CC 2020
-- 
