@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Section */
+.temp{
+    height: 84px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 50;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 4rem;
+}
+
+/* Dropdown Section */
+.nav-dropdown:hover svg rect{
+    fill: #D47616;
+}
+
+.dropdown-content{
+    display: none;
+    position: fixed;
+    background-color: black;
+    min-width: 25rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 40;
+    color: white;
+    flex-direction: column;
+    left: 0;
+    padding-top: 1.9rem;
+}
+
+.nav-dropdown:hover .dropdown-content{
+    display: flex;
+}
+
+.dropdown-content a:hover{
+    color: #D47616;
+}
+
+.dropdown-content a{
+    color: white;
+    width: 100%;
+    margin: auto;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.login-text{
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    height: auto;
+}
+
+.login-box{
+    border: 2px solid white;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0px 6px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
+
+/* Hero Section */
+.hero-section{
+    height: 100vh;
+    background-image: url('../images/hero-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero Section */
+
+
+/* Character Section */
+.char-section{
+    height: 100vh;
+    background-image: url('../images/mondstat-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.char-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 4rem;
+    z-index: 1;
+}
+
+.title-heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.title-heading h1{
+    margin: 0 1rem;
+}
+
+.char-content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+}
+
+.char-content .char-desc{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.char-content img{
+    width: 45%;
+    margin: 2rem 0;
+}
+
+.char-content .char-desc p{
+    width: 100%;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: regular;
+    font-size: 1.2rem;
+}
+
+.char-content .char-desc a{
+    text-decoration: none;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: regular;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    align-self: flex-end;
+    margin-top: 1.5rem;
+    z-index: 2;
+}
+
+.char-content .char-desc a:hover{
+    color: #D47616;
+}
+
+#albedo-char{
+    display: block;
+    position: absolute;
+    height: 80vh;
+    right: 0;
+    margin-top: 20vh;
+    z-index: 0;
+}
+
+/* Version Section */
+.version-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/version-information.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+.version-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.version-content{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.version-content a{
+    width: 25%;
+}
+
+.version-content a img{
+    width: 100%;
+}
+
+/* Event Section */
+.event-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/game-event-wallpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+/* Feature Section */
+.feature-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/game-feature-wallpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+/* Footer Section */
+.footer-section{
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 4rem;
+}
+
+.vertical-line{
+    width: 2px;
+    height: 50%;
+    background-color: white;
+    margin: 0 0.5rem;
+}
+
+.footer-left{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-media-icons{
+    margin: 0rem 0.5rem;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+}
+
+.footer-content-box{
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+.footer-content-box a{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    text-decoration: none;
+    color: #c4c4c4;
+}
+
+.footer-content-box a:hover{
+    color: #D47616;
+}
+
+.footer-content-box p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    color: #c4c4c4;
+    margin: 0rem 0.2rem;
+}
+
+.copyright{
+    color: white;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    margin: 0rem 0.2rem;
+}
+
+.card-1{
+    background-image: url('../images/card-1.png');
+}
