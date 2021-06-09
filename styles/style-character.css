@@ -79,65 +79,89 @@ nav{
     border-radius: 10px;
 }
 
-/* Hero Section */
-.hero-section{
-    height: 100vh;
-    background-image: url('../images/gallery-backgroundjpg');
-    background-size: cover;
+/* Character Section */
+.char-section{
+    height: 90vh;
+    background-image: url('../images/character-background.png');
     background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-size: cover;
 }
 
-.title-heading{
-    width: 100%;
+.char-container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 6rem 4rem 6rem;
+    z-index: 1;
+}
+
+.char-content{
     color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.char-content .char-desc{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.char-content img{
+    width: 45%;
+    margin: 2rem 0;
+}
+
+.char-content .char-desc p{
+    width: 100%;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: regular;
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    color: black;
+    padding: 1.5rem;
+}
+
+#item-char{
+    display: none;
+    position: absolute;
+    height: 60vh;
+    right: 0;
+    margin: 4.8vh 10rem 0 0;
+    z-index: 0;
+}
+
+/* Card Sections */
+.char-card-container{
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+}
+
+.char-card-container .char-cards{
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.char-cards:hover p{
+    color: #D47616 !important;
+}
+
+.char-cards .name-card{
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
     font-family: Josefin Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-}
-
-.title-heading h1{
-    margin: 4rem 1rem;
-}
-
-.hero-section .title-heading{
-    margin-top: 2rem;
-}
-
-/* Content Section */
-.gallery-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url('../images/paralax-gallery-wallpaper.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.boss-gallery{
-    height: 100vh;
-}
-
-.boss-content{
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 4rem 0;
-}
-
-.boss-content img{
-    width: 25%;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0.3rem 0;
 }
 
 /* Footer Section */
@@ -216,4 +240,25 @@ nav{
     font-size: 10px;
     line-height: 12px;
     margin: 0rem 0.2rem;
+}
+
+/* Character Content */
+#albedo-content{
+    display: flex !important;
+}
+
+#lisa-content{
+    display: none !important;
+}
+
+#eula-content{
+    display: none !important;
+}
+
+#bennet-content{
+    display: none !important;
+}
+
+#mona-content{
+    display: none !important;
 }
