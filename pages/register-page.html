@@ -42,20 +42,20 @@
         <div class="form-box">
             <h1 class="">Sign Up</h1>
             <hr>
-            <form action="">
+            <form action="" name="registerForm" id="registerForm">
                 <div class="form-1">
                     <label for="email">Email :</label>
-                    <input type="email" name="email" id="input_email" placeholder="Please input your email here..">
+                    <input required type="email" name="email" id="input_email" placeholder="Please input your email here..">
                     <label for="username">Username :</label>
-                    <input type="text" name="username" id="input_username" placeholder="Please input your username here..">
-                    <label for="password">Password :</label>
-                    <input type="password" name="password" id="input_password" placeholder="Please input your password here..">
+                    <input required type="text" name="username" id="input_username" placeholder="Please input your username here..">
+                    <label for="new-password">Password :</label>
+                    <input required type="password" name="password" id="input_password" placeholder="Please input your password here..">
                     <label for="confirm_password">Confirm Password :</label>
-                    <input type="password" name="confirm_password" id="input_confirm_password" placeholder="Please confirm your password here..">
+                    <input required type="password" name="confirmPassword" id="input_confirm_password" placeholder="Please confirm your password here..">
                 </div>
                 <div class="form-2">
                     <label for="birthday">Birthday :</label>
-                    <input type="date" name="birthday" id="input_date">
+                    <input required type="date" name="birthday" id="input_date">
                     <label for="region">Region :</label>
                     <select name="region" id="input_region" >
                         <option value="0">Please choose your region</option>
@@ -74,7 +74,7 @@
                         <label for="input_female">Female</label>
                     </div>
                     <div class="agree-box">
-                        <input type="checkbox" name="agree_term_and_condition" id="input_agree_term_and_condition">
+                        <input required type="checkbox" name="agree_term_and_condition" id="input_agree_term_and_condition">
                         <label for="agree_term_and_condition">I Agree With <span class="term-and-condition-text"><a href="">Term and Conditions</a></span></label>
                     </div>
                     <button type="submit">Submit</button>
