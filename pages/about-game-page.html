@@ -12,7 +12,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
 <body>
-    <div class="temp"></div>
     <nav>
         <div class="nav-container">
             <div class="nav-dropdown">
@@ -22,12 +21,6 @@
                     <rect y="12" width="53" height="7" fill="white"/>
                     <rect width="53" height="7" fill="white"/>
                 </svg>
-                <div class="dropdown-content">
-                    <a href="../index.html">Kenshin’s Impact Home Page</a>
-                    <a href="../pages/character-page.html">Character Informations</a>
-                    <a href="../pages/about-game-page.html">Game Informations</a>
-                    <a href="../pages/gallery-page.html">Kenshin’s Impact Gallery</a>
-                </div>
             </div>
             <a href="../index.html">
                 <img src="../images/kenshin-impact-logo-white.png" alt="" width="144px" height="64px">
@@ -37,50 +30,61 @@
             </a>
         </div>
     </nav>
-    <section class="gallery-content">
-        <!-- Hero Content -->
-        <div class="hero-section">
-            <img width="1080px" height="460px" src="../images/kenshin-impact-logo-white.png" alt="">
-            <div class="title-heading">
-                <img width="180px" src="../images/arrow-right.svg" alt="">
-                <h1>About Game</h1>
-                <img width="180px" src="../images/arrow-left.svg" alt="">
-            </div>
+    <section class="content-section">
+        <!-- Hero Section -->
+        <div class="hero-container">
+            <img src="../images/kenshin-impact-logo-white.png" alt="">
         </div>
-        <!-- First Content -->
-        <div class="boss-galery">
-            <div class="title-heading">
-                <img width="180px" src="../images/arrow-right.svg" alt="">
-                <h1>Version Information</h1>
-                <img width="180px" src="../images/arrow-left.svg" alt="">
+        <!-- Video Game Section -->
+        <div class="video-container">
+            <div class="title-header">
+                <img src="../images/arrow-right.svg" alt="">
+                <h1>Video Game</h1>
+                <img src="../images/arrow-left.svg" alt="">
             </div>
-            <div class="boss-content">
-                <img src="../images/card-1.png" alt="">
-                <img src="../images/card-2.png" alt="">
-                <img src="../images/card-3.png" alt="">
-            </div>
+            <iframe src="https://www.youtube.com/embed/4Z6P_2Gyv98?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <!-- Second Content -->
-        <div class="boss-galery">
-            <div class="title-heading">
-                <img width="180px" src="../images/arrow-right.svg" alt="">
-                <h1>Game Event</h1>
-                <img width="180px" src="../images/arrow-left.svg" alt="">
-            </div>
-            <div class="boss-content">
-                <img src="../images/card-4.png" alt="">
-                <img src="../images/card-5.png" alt="">
-                <img src="../images/card-6.png" alt="">
-            </div>
+        <!-- Game Feature -->
+        <div class="title-header">
+            <img src="../images/arrow-right.svg" alt="">
+            <h1>Game Feature</h1>
+            <img src="../images/arrow-left.svg" alt="">
         </div>
-        <!-- Carousel Content -->
+        <!-- Feature #1 -->
+        <div class="feature-container">
+            <p class="feature-content">
+                Enjoy a captivating single-player adventure. As a traveler who came from another world, you will begin your journey to find your long-separated brother. You too will unravel the deepest mysteries of Teyvat, as well as yourself.
+            </p>
+            <img class="feature-photo" src="../images/feature-photo-1.png" alt="">
+        </div>
+        <!-- Feature #2 -->
+        <div class="feature-container">
+            <img class="feature-photo" src="../images/feature-photo-2.png" alt="">
+            <p class="feature-content">
+                Flying through vast worlds, swimming in crystal clear oceans, and climbing towering mountains. Travel as you please and discover all the hidden secrets behind this world of mysteries and wonders.
+            </p>
+        </div>
+        <!-- Feature #3 -->
+        <div class="feature-container">
+            <p class="feature-content">
+                You can fight solo, or you can invite your friends to fight together against dangerous monsters on multiple platforms: PS4, iOS, Android, and PC.
+            </p>
+            <img class="feature-photo" src="../images/feature-photo-3.png" alt="">
+        </div>
+        <!-- Feature #4 -->
+        <div class="feature-container">
+            <img class="feature-photo" src="../images/feature-photo-4.png" alt="">
+            <p class="feature-content">
+                Genshin Impact is no ordinary fighting game. Combining the power of different elements is the key to defeating powerful enemies and solving challenging puzzles.
+            </p>
+        </div>
     </section>
     <!-- Footer Section -->
     <footer class="footer-section">
         <div class="footer-left">
-            <a href="#"><img src="../images/mihoyoman-without-background.png" alt="" height="58px" width="155px"></a>
+            <a href="#"><img src="../images/mihoyoman-without-background.png" alt=""></a>
             <div class="vertical-line"></div>
-            <a href="#"><img src="../images/kenshin-impact-logo-white.png" alt="" height="93px" width="155pxpx"></a>
+            <a href="#"><img src="../images/kenshin-impact-logo-white.png" alt=""></a>
         </div>
         <div class="footer-right">
             <div class="social-media-box">
@@ -91,18 +95,16 @@
                 <a href="https://www.reddit.com/r/Genshin_Impact/" class="social-media-icons"><img src="../images/footer-reddit.svg" alt="" width="57px" height="57px"></a>
                 <a href="https://www.youtube.com/c/GenshinImpact" class="social-media-icons"><img src="../images/footer-youtube.svg" alt="" width="57px" height="57px"></a>
             </div>
-            <div class="footer-content">
-                <div class="footer-content-box">
-                    <p>|</p>
-                    <a href="#">Privacy Policy</a>
-                    <p>|</p>
-                    <a href="#">Term of Service</a>
-                    <p>|</p>
-                    <a href="#">About Us</a>
-                    <p>|</p>
-                    <a href="#">Contact Us</a>
-                    <p>|</p>
-                </div>
+            <div class="footer-content-box">
+                <p>|</p>
+                <a href="#">Privacy Policy</a>
+                <p>|</p>
+                <a href="#">Term of Service</a>
+                <p>|</p>
+                <a href="#">About Us</a>
+                <p>|</p>
+                <a href="#">Contact Us</a>
+                <p>|</p>
             </div>
             <div class="copyright">
                 Copyright &copy 2020 miHoYoman All Rights Reserved
