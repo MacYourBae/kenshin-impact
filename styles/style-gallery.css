@@ -107,6 +107,18 @@ nav{
     margin: 4rem 1rem;
 }
 
+.hero-gallery{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-logo{
+    width: 75%;
+}
+
 .hero-section .title-heading{
     margin-top: 2rem;
 }
@@ -142,37 +154,56 @@ nav{
 
 /* Footer Section */
 .footer-section{
-    height: 20vh;
     background-color: black;
     display: flex;
-    justify-content: center;
-    padding: 1rem 4rem;
+    flex-direction: column;
+    padding: 1rem 1rem;
 }
 
 .vertical-line{
-    width: 2px;
-    height: 50%;
+    width: 1px;
+    height: 30px;
     background-color: white;
     margin: 0 0.5rem;
 }
 
 .footer-left{
-    width: 50%;
-    height: auto;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
+.footer-left img{
+    width: 70px;
+    height: 25px;
+}
+
 .footer-right{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.social-media-box{
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media-box a{
+    margin: 0;
+}
+
+.social-media-box a img{
+    width: 25px;
+    height: 25px;
+}
+
 .social-media-icons{
-    margin: 0rem 0.5rem;
+    margin: 0.5rem 0.5rem;
 }
 
 .footer-content{
@@ -183,13 +214,14 @@ nav{
 .footer-content-box{
     display: flex;
     margin: 0.5rem 0;
+    justify-content: center;
 }
 
 .footer-content-box a{
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 0.5rem;
     text-decoration: none;
     color: #c4c4c4;
 }
@@ -209,6 +241,7 @@ nav{
 }
 
 .copyright{
+    text-align: center;
     color: white;
     font-family: Inter;
     font-style: normal;
@@ -218,69 +251,86 @@ nav{
     margin: 0rem 0.2rem;
 }
 
-.hero-gallery{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#hero-logo{
-    width: 75%;
-}
-
-/* Mobile size */
-@media only screen and (max-width : 600px){
+/* Mobile Size */
+@media only screen and (min-width: 600px){
     .nav-container{
-        margin: 0rem 4rem;
+        margin: 0.5rem 2rem;
     }
-    
+
+    .gallery-content{
+        padding: 0 2rem;
+    }
+
     .title-heading h1{
-        align-items: center;
+        font-size: 2.5rem;
         text-align: center;
-        height: 10vh;
+    }
+
+    .title-heading img{
+        width: 20%;
+    }
+
+    .boss-gallery{
+        font-size: 1rem;
     }
 
     .boss-content{
-        flex-direction: row;
-        align-items: center;
-    }
-    
-    .footer-section{
-        flex-direction: column;
-        align-items: center;
-        height: 42vh;
+        padding: 0 1rem;
     }
 
-    .footer-left, .footer-right, .footer-content, .copyright{
-        justify-content: center;
-        text-align: center;
-        width: 100%;
+    .footer-section{
+        flex-direction: row;
+    }
+
+    .footer-left{
+        width: 50%;
+        justify-content: flex-end;
+        margin-right: 1rem;
+    }
+
+    .footer-left img{
+        width: 140px;
+        height: 50px;
+    }
+
+    .footer-right{
+        width: 50%;
+    }
+
+    .social-media-box a img{
+        width: 37.5px;
+        height: 37.5px;
+        margin: 0.25rem;
+    }
+
+    .social-media-box{
+        justify-content: flex-start;
+    }
+
+    .footer-content-box, .copyright{
+        justify-content: flex-start;
+        text-align: start;
     }
 }
 
-/* Tablet size */
-@media only screen and (max-width: 1080px){
+/* Desktop Size */
+@media only screen and (min-width: 1024px){
     .nav-container{
-        margin: 0rem 2rem;
+        margin: 0.5rem 4rem;
     }
 
-    .title-heading{
-        align-items: center;
-        text-align: center;
-        height: 15vh;
+    .gallery-content{
+        padding: 0 4rem;
+    }
+    
+    .vertical-line{
+        display: flex;
+        width: 2px;
+        height: 50%;
     }
 
-    .footer-section{
-        flex-direction: column;
-        align-items: center;
-        height: 32vh;
-    }
-
-    .footer-left, .footer-right, .footer-content, .copyright{
-        justify-content: center;
-        text-align: center;
-        width: 100%;
+    .social-media-box a{
+        width: 50px;
+        height: 50px;
     }
 }
