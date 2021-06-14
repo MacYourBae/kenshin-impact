@@ -54,24 +54,24 @@ nav{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 4.5rem 0 0 0;
     display: flex;
     flex-direction: column;
 }
 
 .character-box{
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    z-index: 5;
     height: 80vh;
-    margin-left: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.char-atr{
-    margin-bottom: 0.5rem;
-    z-index: 4;
-    width: 75%;
+.character-box-inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 3.8rem 1rem;
 }
 
 .character-box p{
@@ -85,49 +85,53 @@ nav{
     font-size: 14px;
 }
 
-.character-card-box{
-    display: flex;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    z-index: 2;
-    height: 20vh;
-    justify-content: space-evenly;
-    align-items: center;
+.character-box img{
+    width: 75%;
+    margin-bottom: 1rem;
 }
 
 .char-item{
+    display: none;
     height: 80vh;
     position: absolute;
     right: 0;
     z-index: 1;
 }
 
-.card-box{
-    height: 75%;
-    width: 10%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    display: flex;
-    flex-direction: column;
+.character-card-box{
+    height: 20vh;
     background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.card-box img{
+.card{
+    width: 60px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin:1rem 0;
+}
+
+.card p:hover{
+    color: #D47616;
+}
+
+.card img{
     width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.card-text{
-    background-color: black;
+.card p{
     color: white;
+    background-color: black;
     font-family: Josefin Sans;
     font-style: normal;
     font-weight: bold;
     text-align: center;
-    padding: 0.3rem 0;
-}
-
-.card-text:hover{
-    color: #D47616 !important;
 }
 
 /* Footer Section */
@@ -235,6 +239,27 @@ nav{
         margin: 0.5rem 2rem;
     }
 
+    .character-box{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .character-box-inside{
+        width: 75%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 3.8rem 0 0 2rem;
+    }
+
+    .char-item{
+        display: block;
+    }
+
+    .card{
+        width: 75px;
+        height: 100px;
+    }
+    
     .footer-section{
         flex-direction: row;
     }
@@ -274,6 +299,14 @@ nav{
 @media only screen and (min-width: 1024px) {
     .nav-container{
         margin: 0.5rem 4rem;
+    }
+
+    .character-box-inside{
+        width: 65%;
+    }
+
+    .character-box-inside  p{
+        font-size: 1.25rem;
     }
 
     .vertical-line{

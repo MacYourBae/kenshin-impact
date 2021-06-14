@@ -398,6 +398,7 @@ nav{
 @media only screen and (max-width: 600px){
     .char-content{
         margin: 0px 0px 0px 5px;
+        align-items: center;
     }
     .char-content p{
         flex-direction: row;
@@ -405,6 +406,10 @@ nav{
 
     .char-content a p{
         font-size: 1rem;
+    }
+
+    .char-container{
+        padding: 120px 16px;
     }
 
     #albedo-char{
@@ -446,7 +451,8 @@ nav{
     }
 
     #albedo-char{
-        display: none;
+        display: block;
+        align-items: flex-end;
     }
 
     .footer-section{
