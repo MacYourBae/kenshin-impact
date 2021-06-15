@@ -320,3 +320,23 @@ nav{
         height: 50px;
     }
 }
+
+.albedo{
+    display: none;
+}
+
+.mona{
+    display: none;
+}
+
+.lisa{
+    display: none;
+}
+
+.bennet{
+    display: flex;
+}
+
+.eula{
+    display: none;
+}
