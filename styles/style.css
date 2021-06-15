@@ -396,12 +396,29 @@ nav{
 }
 
 @media only screen and (max-width: 600px){
+    
+    .nav-container{
+        margin: 0.5rem 2rem;
+    }
+
+    .hero-section{
+        width: 100%;
+    }
+
+    .title-heading h1{
+        font-size: 1.5rem;
+    }
+
+    .title-heading img{
+        width: 20%;
+    }
+    
     .char-content{
         margin: 0px 0px 0px 5px;
         align-items: center;
     }
     .char-content p{
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .char-content a p{
@@ -409,7 +426,12 @@ nav{
     }
 
     .char-container{
-        padding: 120px 16px;
+        padding: 80px 32px;
+    }
+
+    .char-content img{
+        margin: 10px 55px 10px 0px;
+        width: 50%;
     }
 
     #albedo-char{
@@ -417,7 +439,7 @@ nav{
     }
 
     .version-content{
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
@@ -431,11 +453,11 @@ nav{
     }
 
     .title-heading h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .version-section a{
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .char-desc{
@@ -444,15 +466,26 @@ nav{
 
     .char-content{
         margin: 0px 0px 0px 10px;
+        align-items: flex-start;
     }
 
     .char-content a p{
         font-size: 1rem;
     }
 
+    .char-container{
+        padding: 80px 32px;
+    }
+
+    .char-container img{
+        margin: 10px;
+        width: 50%;
+    }
+
     #albedo-char{
-        display: block;
-        align-items: flex-end;
+        width: 40%;
+        margin: 100px 0px 0px 0px;
+
     }
 
     .footer-section{
@@ -497,15 +530,11 @@ nav{
     }
 
     .hero-section{
-        padding: 0 4rem;
+        
     }
 
     .char-content p{
         font-size: 1.5rem;
-    }
-
-    #albedo-char{
-        display: block;
     }
 
     .vertical-line{
