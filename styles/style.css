@@ -21,7 +21,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     align-items: center;
-    margin: 0.5rem 1rem;
+    margin: 0 1rem;
 }
 
 .nav-container img{
@@ -35,9 +35,6 @@ nav{
 }
 
 /* Dropdown Section */
-.nav-dropdown svg{
-    margin-right: 4.6rem;
-}
 
 .nav-dropdown:hover svg rect{
     fill: #D47616;
@@ -398,7 +395,7 @@ nav{
 @media only screen and (max-width: 600px){
     
     .nav-container{
-        margin: 0.5rem 2rem;
+        margin: 0 2rem;
     }
 
     .hero-section{
@@ -449,7 +446,7 @@ nav{
 /* Mobile Size */
 @media only screen and (min-width: 600px){
     .nav-container{
-        margin: 0.5rem 2rem;
+        margin: 0 2rem;
     }
 
     .title-heading h1{
