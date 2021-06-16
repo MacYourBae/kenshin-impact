@@ -4,10 +4,6 @@
 }
 
 /* Navigation Section */
-.temp{
-    height: 84px;
-}
-
 nav{
     position: fixed;
     top: 0;
@@ -20,7 +16,18 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0.5rem 4rem;
+    align-items: center;
+    margin: 0.5rem 1rem;
+}
+
+.nav-container img{
+    width: 100px;
+    height: 40px;
+}
+
+.nav-container svg{
+    width: 40px;
+    height: 20px;
 }
 
 /* Dropdown Section */
@@ -63,7 +70,7 @@ nav{
 }
 
 .login-text{
-    font-size: 1.5rem;
+    font-size: 12px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     text-decoration: none;
@@ -73,7 +80,7 @@ nav{
 
 .login-box{
     border: 2px solid white;
-    padding: 1rem;
+    padding: 0.5rem 0.25rem;
     box-sizing: border-box;
     box-shadow: 0px 6px 4px rgba(255, 255, 255, 0.25);
     border-radius: 10px;
@@ -150,6 +157,127 @@ nav{
 
 .boss-content img{
     width: 25%;
+}
+
+.background-card1{
+    background-image: url('../images/card-7.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 251px;
+}
+
+.background-card2{
+    background-image: url('../images/card-8.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 251px;
+}
+
+.background-card3{
+    background-image: url('../images/card-9.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 251px;
+}
+
+.background-card4{
+    background-image: url('../images/card-10.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 251px;
+}
+
+.background-card5{
+    background-image: url('../images/card-11.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 251px;
+}
+
+.background-card6{
+    background-image: url('../images/card-12.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 251px;
+}
+
+.background-card7{
+    background-image: url('../images/card-13.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 251px;
+}
+
+.background-card8{
+    background-image: url('../images/card-14.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 251px;
+}
+
+.background-card9{
+    background-image: url('../images/card-15.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 251px;
+}
+
+.background-card10{
+    background-image: url('../images/card-16.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 251px;
+}
+
+.background-card11{
+    background-image: url('../images/card-17.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 251px;
+}
+
+.background-card12{
+    background-image: url('../images/card-18.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 251px;
+}
+
+.boss-content p{
+    width: 100%;
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    color: white;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 16px 0px;
 }
 
 /* Footer Section */
@@ -251,18 +379,13 @@ nav{
     margin: 0rem 0.2rem;
 }
 
-/* Mobile Size */
-@media only screen and (min-width: 600px){
+@media only screen and (max-width: 600px){
     .nav-container{
-        margin: 0.5rem 2rem;
-    }
-
-    .gallery-content{
-        padding: 0 2rem;
+        margin: 0.5rem 1rem;
     }
 
     .title-heading h1{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 
@@ -270,12 +393,25 @@ nav{
         width: 20%;
     }
 
-    .boss-gallery{
-        font-size: 1rem;
+    .boss-content{
+        flex-direction: column;
+        align-items: center;
+        padding: 16px 0px;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .nav-container{
+        margin: 0.5rem 2rem;
     }
 
-    .boss-content{
-        padding: 0 1rem;
+    .title-heading h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .title-heading img{
+        width: 20%;
     }
 
     .footer-section{
@@ -313,7 +449,6 @@ nav{
     }
 }
 
-/* Desktop Size */
 @media only screen and (min-width: 1024px){
     .nav-container{
         margin: 0.5rem 4rem;
@@ -322,7 +457,7 @@ nav{
     .gallery-content{
         padding: 0 4rem;
     }
-    
+
     .vertical-line{
         display: flex;
         width: 2px;
