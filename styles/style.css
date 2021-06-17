@@ -44,7 +44,6 @@ nav{
     display: none;
     position: fixed;
     background-color: black;
-    min-width: 25rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 40;
@@ -121,7 +120,7 @@ nav{
 .char-container{
     display: flex;
     flex-direction: column;
-    padding: 10rem 4rem;
+    padding: 10rem 0;
     z-index: 1;
 }
 
@@ -143,7 +142,7 @@ nav{
 }
 
 .title-heading img{
-    width: 20%;
+    width: 20% !important;
 }
 
 .char-content{
@@ -151,6 +150,7 @@ nav{
     display: flex;
     flex-direction: column;
     margin-left: 20rem;
+    z-index: 11;
 }
 
 .char-content .char-desc{
@@ -182,7 +182,6 @@ nav{
     display: flex;
     align-self: flex-end;
     margin-top: 1.5rem;
-    z-index: 2;
 }
 
 .char-content .char-desc a:hover{
@@ -195,14 +194,12 @@ nav{
     height: 80vh;
     right: 0;
     margin-top: 20vh;
-    z-index: 0;
+    z-index: 10;
 }
 
 /* Version Section */
 .version-section{
-    height: 100vh;
     display: flex;
-    flex-direction: column;
     background-image: url('../images/version-information.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -231,9 +228,7 @@ nav{
 
 /* Event Section */
 .event-section{
-    height: 100vh;
     display: flex;
-    flex-direction: column;
     background-image: url('../images/game-event-wallpaper.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -405,11 +400,10 @@ nav{
     .title-heading h1{
         font-size: 1.5rem;
     }
-
-    .title-heading img{
-        width: 20%;
-    }
     
+    .char-section{
+        height: 100vh;
+    }
     .char-content{
         margin: 0px 0px 0px 5px;
         align-items: center;
@@ -423,7 +417,7 @@ nav{
     }
 
     .char-container{
-        padding: 80px 32px;
+        padding: 80px 0;
     }
 
     .char-content img{
@@ -433,12 +427,6 @@ nav{
 
     #albedo-char{
         display: none;
-    }
-
-    .version-content{
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
     }
 
 }
@@ -471,18 +459,15 @@ nav{
     }
 
     .char-container{
-        padding: 80px 32px;
+        padding: 80px 0;
     }
 
     .char-container img{
-        margin: 10px;
         width: 50%;
     }
 
     #albedo-char{
-        width: 40%;
         margin: 100px 0px 0px 0px;
-
     }
 
     .footer-section{
@@ -524,10 +509,6 @@ nav{
 @media only screen and (min-width: 1024px){
     .nav-container{
         margin: 0.5rem 4rem;
-    }
-
-    .hero-section{
-        
     }
 
     .char-content p{
