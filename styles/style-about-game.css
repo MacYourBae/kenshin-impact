@@ -30,6 +30,45 @@ nav{
     height: 20px;
 }
 
+/* Dropdown Section */
+
+.nav-dropdown:hover svg rect{
+    fill: #D47616;
+}
+
+.dropdown-content{
+    display: none;
+    position: fixed;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 40;
+    color: white;
+    flex-direction: column;
+    left: 0;
+    padding-top: 1.9rem;
+}
+
+.nav-dropdown:hover .dropdown-content{
+    display: flex;
+}
+
+.dropdown-content a:hover{
+    color: #D47616;
+}
+
+.dropdown-content a{
+    color: white;
+    width: 100%;
+    margin: auto;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
 .login-text{
     font-size: 12px;
     font-family: 'Josefin Sans', sans-serif;
