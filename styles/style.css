@@ -229,7 +229,7 @@ nav{
 /* Event Section */
 .event-section{
     display: flex;
-    background-image: url('../images/game-event-wallpaper.jpg');
+    background-image: url('../images/paralax-about-game.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

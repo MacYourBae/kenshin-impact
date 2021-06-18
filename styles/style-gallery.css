@@ -174,14 +174,14 @@ nav{
 }
 
 .background-card2{
-    background-image: url('../images/card-8.png');
+    background-image: url('../images/card-8.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .background-card3{
-    background-image: url('../images/card-9.png');
+    background-image: url('../images/card-9.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -202,9 +202,9 @@ nav{
 }
 
 .background-card6{
-    background-image: url('../images/card-12.jpg');
+    background-image: url('../images/card-12.png');
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
 }
 
@@ -216,14 +216,14 @@ nav{
 }
 
 .background-card8{
-    background-image: url('../images/card-14.jpg');
+    background-image: url('../images/card-14.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .background-card9{
-    background-image: url('../images/card-15.jpg');
+    background-image: url('../images/card-15.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
